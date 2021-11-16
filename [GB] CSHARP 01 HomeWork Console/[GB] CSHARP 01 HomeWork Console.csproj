@@ -49,6 +49,7 @@
     <Compile Include="Task01.cs" />
     <Compile Include="Task02.cs" />
     <Compile Include="Task03.cs" />
+    <Compile Include="Task04.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

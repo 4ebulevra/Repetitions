@@ -26,10 +26,12 @@ namespace _GB__CSHARP_01_HomeWork_Console
             Console.Write("Введите рост(м): ");
             Height = double.Parse(Console.ReadLine());
         }
+
         private void PrintData()
         {
             Console.WriteLine($"Индекс массы тела: {(Weight / (Height * Height)):0.00}");
         }
+
         public override void Start()
         {
             Console.Clear();

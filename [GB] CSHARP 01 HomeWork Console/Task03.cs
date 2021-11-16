@@ -19,6 +19,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
     class Task03 : Task
     {
         private Point a, b;
+
         public Task03()
         {
             task = "Написать программу, которая подсчитывает расстояние между точками " +
@@ -41,6 +42,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
             Console.Write("Введит Y для точки \"B\": ");
             b.y = double.Parse(Console.ReadLine());
         }
+
         private void PrintData()
         {
             Console.WriteLine($"Расстояние между точкой A(x = {a.x} _ y = {a.y}) и точкой B(x = {b.x} - y = {b.y}) = " +
