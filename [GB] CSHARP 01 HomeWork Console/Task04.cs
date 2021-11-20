@@ -53,7 +53,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
         public override void Start()
         {
             Console.Clear();
-            Console.Title = "Task03";
+            Console.Title = "Task04";
             Console.WriteLine($"Задание: {task}");
             CollectData();
             PrintData();
