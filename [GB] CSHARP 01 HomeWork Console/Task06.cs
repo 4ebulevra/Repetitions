@@ -11,6 +11,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
         private int number;
         public Task06()
         {
+            number = new int();
             task = "Написать метод подсчета количества цифр числа.\n" +
                    "-------------------------------------------------------------------------------";
         }
