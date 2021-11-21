@@ -11,6 +11,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
         private double Weight;
         private double Height;
         private int IMT;
+        private string stage;
 
         public Task09()
         {
@@ -32,7 +33,36 @@ namespace _GB__CSHARP_01_HomeWork_Console
 
         private void PrintData()
         {
-            Console.WriteLine(IMT);
+            if (IMT < 16)
+            {
+                stage =  $"выраженный дефицит массы тела, необходимл набрать {(21 * (Height * Height)) - Weight}кг.";
+            }
+            else if (IMT < 18)
+            {
+                stage = $"недостаточная масса тела, необходимл набрать {(21 * (Height * Height)) - Weight}кг.";
+            }
+            else if (IMT < 25)
+            {
+                stage = $"ваш вес в норме.";
+            }
+            else if (IMT < 30)
+            {
+                stage = $"Избыточная масса тела (предожирение), необходимл сбросить {Weight - (21 * (Height * Height))}кг.";
+            }
+            else if (IMT < 35)
+            {
+                stage = $"ожирение 1 степени, необходимл сбросить {Weight - (21 * (Height * Height))}кг.";
+            }
+            else if (IMT < 40)
+            {
+                stage = $"ожирение 2 степени, необходимл сбросить {Weight - (21 * (Height * Height))}кг.";
+            }
+            else
+            {
+                stage = $"ожирение 3 степени, необходимл сбросить {Weight - (21 * (Height * Height))}кг.";
+            }
+
+            Console.WriteLine($"Ваш индекс: {IMT}, {stage}");
         }
 
         public override void Start()
