@@ -27,8 +27,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
 
         private int Nums(int x)
         {
-            if (x < 10) return 1;
-            return 1 + Nums(x / 10);
+            return x < 10 ? 1 : 1 + Nums(x / 10);
         }
 
         private void PrintData()
