@@ -134,6 +134,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
             TaskList.Add(new Task09());
             TaskList.Add(new Task10());
             TaskList.Add(new Task11());
+            TaskList.Add(new Task12());
         }
         static void Main(string[] args)
         {
