@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using COMPLEX;
 
-namespace COMPLEX
+namespace _GB__CSHARP_01_HomeWork_Console
 {
     class Complex
     {
@@ -34,7 +33,7 @@ namespace COMPLEX
             im = b;
         }
 
-        public Complex Addition(Complex a, Complex b)
+        public static Complex Addition(Complex a, Complex b)
         {
             return new Complex(a.Re + b.Re, a.Im + b.Im);
         }
@@ -43,19 +42,18 @@ namespace COMPLEX
             if (im > 0.0)
             {
                 return $"{re} + {im}i";
-            } else if (im < 0.0)
+            }
+            else if (im < 0.0)
             {
                 return $"{re} {im}i";
-            } else
-            { 
-                return $"{re}"; 
+            }
+            else
+            {
+                return $"{re}";
             }
         }
     }
-}
 
-namespace _GB__CSHARP_01_HomeWork_Console
-{
     class Task13 : Task
     {
         Complex a;
@@ -90,9 +88,29 @@ namespace _GB__CSHARP_01_HomeWork_Console
             } while (!double.TryParse(Console.ReadLine(), out b2));
             b = new Complex(b1, b2);
 
-            Console.Write($"Доступные операции:\n" +
-                          $"(1) Сложение комплексного числа {a} и комплексного числа {b}.\n");
-            Console.Write("Введите номер желаемой операции: ");
+            int switcher;
+            do
+            {
+                Console.Write($"\nДоступные операции:\n" +
+                              $"(1) Сложение комплексного числа {a} и комплексного числа {b}.\n" +
+                              $"(2) Вычитание комплексного числа {b} из комплексного числа {a}.\n" +
+                              $"(3) Произведение комплексного числа {a} и комплексного числа {b}.\n" +
+                              $"(любое другое число) для выхода.\n");
+                Console.Write("Введите номер желаемой операции: ");
+            } while (!int.TryParse(Console.ReadLine(), out switcher));
+            switch (switcher)
+            {
+                case 1:
+                    Console.WriteLine(Complex.Addition(a, b));
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                default:
+                    break;
+            }
+
         }
 
         private void PrintData()
