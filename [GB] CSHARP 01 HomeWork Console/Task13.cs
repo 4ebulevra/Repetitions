@@ -19,7 +19,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
         private double im;
         public double Im
         {
-            get { return Im; }
+            get { return im; }
         }
 
         /// <summary>
@@ -101,7 +101,7 @@ namespace _GB__CSHARP_01_HomeWork_Console
             switch (switcher)
             {
                 case 1:
-                    Console.WriteLine(Complex.Addition(a, b));
+                    Console.WriteLine($"{a} + {b} = {Complex.Addition(a, b)}");
                     break;
                 case 2:
                     break;
