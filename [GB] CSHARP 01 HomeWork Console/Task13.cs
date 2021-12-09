@@ -37,6 +37,15 @@ namespace _GB__CSHARP_01_HomeWork_Console
         {
             return new Complex(a.Re + b.Re, a.Im + b.Im);
         }
+        public static Complex Subtraction(Complex a, Complex b)
+        {
+            return new Complex(a.Re + b.Re, a.Im + b.Im);
+        }
+        public static Complex Multiplication(Complex a, Complex b)
+        {
+            return new Complex(a.Re + b.Re, a.Im + b.Im);
+        }
+
         public override string ToString()
         {
             if (im > 0.0)
