@@ -5,3 +5,4 @@ C:\Users\4ebulevra\Documents\GitHub\Repetitions\[GB] CSHARP 01 HomeWork Console\
 C:\Users\4ebulevra\Documents\GitHub\Repetitions\[GB] CSHARP 01 HomeWork Console\obj\Debug\[GB] CSHARP 01 HomeWork Console.csproj.CoreCompileInputs.cache
 C:\Users\4ebulevra\Documents\GitHub\Repetitions\[GB] CSHARP 01 HomeWork Console\obj\Debug\[GB] CSHARP 01 HomeWork Console.exe
 C:\Users\4ebulevra\Documents\GitHub\Repetitions\[GB] CSHARP 01 HomeWork Console\obj\Debug\[GB] CSHARP 01 HomeWork Console.pdb
+C:\Users\4ebulevra\Documents\GitHub\Repetitions\[GB] CSHARP 01 HomeWork Console\obj\Debug\[GB] CSHARP 01 HomeWork Console.csproj.SuggestedBindingRedirects.cache
