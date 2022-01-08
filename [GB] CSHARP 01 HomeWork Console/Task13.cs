@@ -39,11 +39,11 @@ namespace _GB__CSHARP_01_HomeWork_Console
         }
         public static Complex Subtraction(Complex a, Complex b)
         {
-            return new Complex(a.Re + b.Re, a.Im + b.Im);
+            return new Complex(a.Re - b.Re, a.Im - b.Im);
         }
         public static Complex Multiplication(Complex a, Complex b)
         {
-            return new Complex(a.Re + b.Re, a.Im + b.Im);
+            return new Complex(a.Re * b.Re, (a.Im * b.Re) + (a.Re * b.Im));
         }
 
         public override string ToString()
@@ -113,8 +113,10 @@ namespace _GB__CSHARP_01_HomeWork_Console
                     Console.WriteLine($"{a} + {b} = {Complex.Addition(a, b)}");
                     break;
                 case 2:
+                    Console.WriteLine($"{a} - {b} = {Complex.Subtraction(a, b)}");
                     break;
                 case 3:
+                    Console.WriteLine($"{a} x {b} = {Complex.Multiplication(a, b)}");
                     break;
                 default:
                     break;
